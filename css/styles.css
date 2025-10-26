@@ -1,7 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #434455;
+  max-width: 1440px;
 }
 
 ul {
@@ -9,6 +34,25 @@ ul {
 }
 /*хедер, лого*/
 
+.header-container {
+  display: flex;
+  height: 72px;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-header {
+  display: flex;
+  flex-direction: row;
+}
+.nav-ul,
+.addr-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.nav-ul {
+  margin: 0 0 0 76px;
+}
 .studio-link {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -32,9 +76,7 @@ ul {
   color: #2e2f42;
   text-decoration: none;
 }
-.nav-list:hover {
-  color: #404bbf;
-}
+.nav-list:hover,
 .nav-list:focus {
   color: #404bbf;
 }
@@ -51,9 +93,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.addr-link:hover {
-  color: #404bbf;
-}
+.addr-link:hover,
 .addr-link:focus {
   color: #404bbf;
 }
@@ -68,12 +108,27 @@ ul {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+
+  max-width: 496px;
 }
 .section-one,
 footer {
   background-color: #2e2f42;
 }
+.section-one {
+  margin-bottom: 120px;
+}
+.section-one-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .btn {
+  font-family: "Roboto", sans-serif;
+  font-style: Medium;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -81,16 +136,29 @@ footer {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 48px;
 }
-.btn:hover {
-  background-color: #404bbf;
-}
+.btn:hover,
 .btn:focus {
   background-color: #404bbf;
 }
 
 /*секция 2 */
-
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .heading-three {
   color: #2e2f42;
   font-weight: 500;
@@ -104,6 +172,24 @@ footer {
   letter-spacing: 0.02em;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.section-two-div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 120px;
+}
+.ul-section-two {
+  display: flex;
+  gap: 24px;
+  max-width: 1128px;
+}
+.li-section-two {
+  display: flex;
+  flex-direction: column;
+  max-width: 264px;
+}
+.values-hd {
+  margin-bottom: 8px;
 }
 /* секция 3 */
 .section-three {
@@ -120,20 +206,90 @@ footer {
 .team-list {
   background-color: #ffffff;
 }
-.gen-heading-to {
+.gen-heading-three,
+.heading-two-four-s {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
+.gen-heading-three {
+  margin-top: 120px;
+}
+
+.div-section-three {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+.ul-section-three {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 120px;
+}
+.team-list {
+  width: 264px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.team-hd {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+/* секция 4 */
+.section-four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div-section-four {
+  display: flex;
+  flex-direction: column;
+  max-width: 1128px;
+  gap: 24px;
+}
+.ul-section-four {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 120px;
+}
+.four-s-list {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-div {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
+
 /*футер*/
+
 footer a {
   color: #f4f4fd;
+  margin-bottom: 16px;
 }
 .p-footer {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.footer-div {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  margin-left: 56px;
+}
+.p-footer {
+  max-width: 264px;
 }
