@@ -74,10 +74,7 @@ img {
   text-decoration: none;
   color: #4d5ae5;
 }
-.fot-link {
-  display: inline-block;
-  margin-bottom: 16px;
-}
+
 .hed-link {
   margin-right: 76px;
 }
@@ -305,8 +302,13 @@ h2.hidden {
   margin-top: 8px;
 }
 /*футер*/
+
 .footer {
   padding: 100px 0;
+}
+.fot-link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .p-footer {
   color: #f4f4fd;
