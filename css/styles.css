@@ -74,7 +74,7 @@ img {
   text-decoration: none;
   color: #4d5ae5;
 }
-.s-l-h {
+header > a.studio-link {
   margin-right: 76px;
   display: inline-block;
 }
@@ -296,17 +296,13 @@ li.team-list {
   margin-top: 8px;
 }
 /*футер*/
-footer > a {
+.fot-link {
   display: inline-block;
-}
-.s-l-f {
-  margin: 24px 0;
   margin-bottom: 16px;
 }
 .footer {
   padding: 100px 0;
 }
-
 .p-footer {
   color: #f4f4fd;
   line-height: 1.5;
