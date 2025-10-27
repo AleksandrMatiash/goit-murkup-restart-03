@@ -33,15 +33,22 @@ ul {
   list-style: none;
 }
 /*хедер, лого*/
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .header-container {
   display: flex;
   height: 72px;
   align-items: center;
   justify-content: space-around;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .nav-header {
   display: flex;
+  align-items: center;
   flex-direction: row;
 }
 .nav-ul,
@@ -65,10 +72,10 @@ ul {
   color: #4d5ae5;
 }
 
-.studio-sp {
+.studio-h {
   color: #2e2f42;
 }
-.studio-w {
+.studio-f {
   color: #f4f4fd;
 }
 
@@ -85,6 +92,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #404bbf;
+  display: flex;
+  align-items: center;
 }
 
 .addr-link {
@@ -108,7 +117,6 @@ ul {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-
   max-width: 496px;
 }
 .section-one,
@@ -116,14 +124,12 @@ footer {
   background-color: #2e2f42;
 }
 .section-one {
-  margin-bottom: 120px;
+  padding: 188px 0;
 }
 .section-one-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .btn {
@@ -136,7 +142,7 @@ footer {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
@@ -148,7 +154,7 @@ footer {
 }
 
 /*секция 2 */
-.hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -176,11 +182,11 @@ footer {
 .section-two-div {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 120px;
 }
 .ul-section-two {
   display: flex;
   gap: 24px;
+  padding: 120px 0;
   max-width: 1128px;
 }
 .li-section-two {
@@ -194,6 +200,7 @@ footer {
 /* секция 3 */
 .section-three {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .our-team {
   font-size: 36px;
@@ -214,22 +221,23 @@ footer {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  margin-bottom: 72px;
-}
-.gen-heading-three {
-  margin-top: 120px;
 }
 
 .div-section-three {
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
 }
 .ul-section-three {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-bottom: 120px;
+  margin-top: 72px;
+}
+.li-section-two {
+  width: calc((100% -72px) / 4);
+}
+.worker {
+  padding: 32px;
 }
 .team-list {
   width: 264px;
@@ -242,9 +250,13 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .team-hd {
-  margin-top: 32px;
+  text-align: center;
   margin-bottom: 8px;
 }
+.p-s-f {
+  text-align: center;
+}
+
 /* секция 4 */
 .section-four {
   display: flex;
@@ -276,14 +288,13 @@ footer {
 }
 
 /*футер*/
+.s-l-f {
+  margin: 24px 0;
+}
 .footer {
   padding: 100px 0;
 }
-footer a {
-  color: #f4f4fd;
-  margin-bottom: 16px;
-  display: inline-block;
-}
+
 .p-footer {
   color: #f4f4fd;
   line-height: 1.5;

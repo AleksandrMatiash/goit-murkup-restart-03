@@ -3,28 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
+
     <title>goit-webstudio</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header-container">
         <nav class="nav-header">
           <a href="./index.html" class="studio-link"
-            >Web<span class="studio-sp">Studio</span></a
+            >Web<span class="studio-h">Studio</span></a
           >
           <ul class="nav-ul">
             <li><a href="./index.html" class="nav-list">Studio</a></li>
@@ -56,8 +57,8 @@
         </div>
       </section>
       <section class="section-two">
-        <div class="section-two-div">
-          <h2 class="hidden">Our Values</h2>
+        <div class="container section-two-div">
+          <h2 class="visually-hidden">Our Values</h2>
           <ul class="ul-section-two">
             <li class="li-section-two">
               <h3 class="values-hd heading-three">Strategy</h3>
@@ -91,28 +92,36 @@
         </div>
       </section>
       <section class="section-three">
-        <div class="div-section-three">
+        <div class="container div-section-three">
           <h2 class="gen-heading-three">Our Team</h2>
           <ul class="ul-section-three">
             <li class="team-list">
               <img src="./images/img-3.jpg" alt="Mark" width="264" />
-              <h3 class="team-hd heading-three">Mark Guerrero</h3>
-              <p class="general-p">Product Designer</p>
+              <div class="worker">
+                <h3 class="team-hd heading-three">Mark Guerrero</h3>
+                <p class="general-p">Product Designer</p>
+              </div>
             </li>
             <li class="team-list">
               <img src="./images/img-2.jpg" alt="Tom" width="264" />
-              <h3 class="team-hd heading-three">Tom Ford</h3>
-              <p class="general-p">Frontend Developer</p>
+              <div class="worker">
+                <h3 class="team-hd heading-three">Tom Ford</h3>
+                <p class="general-p">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-list">
               <img src="./images/img-1.jpg" alt="Camila" width="264" />
-              <h3 class="team-hd heading-three">Camila Garcia</h3>
-              <p class="team-p general-p">Marketing</p>
+              <div class="worker">
+                <h3 class="team-hd heading-three">Camila Garcia</h3>
+                <p class="team-p general-p">Marketing</p>
+              </div>
             </li>
             <li class="team-list">
               <img src="./images/img.jpg" alt="Daniel" width="264" />
-              <h3 class="team-hd heading-three">Daniel Wilson</h3>
-              <p class="general-p">UI Designer</p>
+              <div class="worker">
+                <h3 class="team-hd heading-three">Daniel Wilson</h3>
+                <p class="general-p">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -125,7 +134,7 @@
               <img src="./images/app.jpg" alt="app" width="360" height="300" />
               <div class="portfolio-div">
                 <h3 class="heading-three">Banking App</h3>
-                <p class="general-p">App</p>
+                <p class="p-s-f general-p">App</p>
               </div>
             </li>
             <li class="four-s-list">
@@ -189,8 +198,8 @@
     </main>
     <footer class="footer">
       <div class="container footer-div">
-        <a href="./index.html" class="studio-link"
-          >Web<span class="studio-w">Studio</span></a
+        <a href="./index.html" class="studio-link s-l-f"
+          >Web<span class="studio-f">Studio</span></a
         >
         <p class="p-footer">
           Increase the flow of customers and sales for your business with
