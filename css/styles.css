@@ -35,14 +35,6 @@ ul {
 img {
   display: block;
 }
-/* .container { 
-max-width: 
-padding-left:  
-padding-right:  
-margin-left:  
-margin-right:  
-} */
-
 /*хедер, лого*/
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -171,7 +163,7 @@ footer {
 }
 
 /*секция 2 */
-.visually-hidden {
+h2.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -253,7 +245,7 @@ footer {
 .worker {
   padding: 32px 0;
 }
-.ul-section-three > li.team-list {
+li.team-list {
   width: calc((100% - 72px) / 4);
   max-width: 264px;
   background-color: #ffffff;
@@ -304,6 +296,9 @@ footer {
   margin-top: 8px;
 }
 /*футер*/
+footer > a {
+  display: inline-block;
+}
 .s-l-f {
   margin: 24px 0;
   margin-bottom: 16px;
