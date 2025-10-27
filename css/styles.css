@@ -72,6 +72,7 @@ margin-right:
   margin: 0 0 0 76px;
 }
 .studio-link {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -81,7 +82,6 @@ margin-right:
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
-  display: inline-block;
 }
 .s-l-h {
   margin-right: 76px;
@@ -232,7 +232,7 @@ footer {
 .team-list {
   background-color: #ffffff;
 }
-.gen-heading-three,
+.gen-heading-two,
 .heading-two-four-s {
   font-size: 36px;
   line-height: 1.11;
