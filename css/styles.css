@@ -73,11 +73,12 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
-}
-header > a.studio-link {
-  margin-right: 76px;
   display: inline-block;
 }
+.hed-link {
+  margin-right: 76px;
+}
+
 .studio-h {
   color: #2e2f42;
 }
@@ -236,7 +237,6 @@ h2.hidden {
 
 .ul-section-three {
   display: flex;
-  justify-content: center;
   gap: 24px;
 }
 .li-section-two {
@@ -245,7 +245,13 @@ h2.hidden {
 .worker {
   padding: 32px 0;
 }
-li.team-list {
+.div-section-three {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.team-list {
   width: calc((100% - 72px) / 4);
   max-width: 264px;
   background-color: #ffffff;
