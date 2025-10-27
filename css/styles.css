@@ -32,6 +32,15 @@ body {
 ul {
   list-style: none;
 }
+
+/* .container { 
+max-width: 
+padding-left:  
+padding-right:  
+margin-left:  
+margin-right:  
+} */
+
 /*хедер, лого*/
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -71,7 +80,9 @@ ul {
   text-decoration: none;
   color: #4d5ae5;
 }
-
+.s-l-h {
+  margin-right: 72px;
+}
 .studio-h {
   color: #2e2f42;
 }
@@ -82,6 +93,7 @@ ul {
 .nav-list {
   color: #2e2f42;
   text-decoration: none;
+  padding: 24px 0;
 }
 .nav-list:hover,
 .nav-list:focus {
@@ -109,7 +121,9 @@ ul {
 .address-head {
   font-style: normal;
 }
-
+section {
+  padding: 120px 0;
+}
 /*секция 1, footer backgr*/
 .zag {
   color: #ffffff;
@@ -179,6 +193,7 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .section-two-div {
   display: flex;
   justify-content: space-around;
@@ -186,7 +201,6 @@ footer {
 .ul-section-two {
   display: flex;
   gap: 24px;
-  padding: 120px 0;
   max-width: 1128px;
 }
 .li-section-two {
@@ -200,7 +214,6 @@ footer {
 /* секция 3 */
 .section-three {
   background-color: #f4f4fd;
-  padding: 120px 0;
 }
 .our-team {
   font-size: 36px;
@@ -221,62 +234,55 @@ footer {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
-.div-section-three {
-  display: flex;
-  flex-direction: column;
-}
 .ul-section-three {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 72px;
 }
 .li-section-two {
-  width: calc((100% -72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 .worker {
-  padding: 32px;
+  padding: 32px 0;
 }
 .team-list {
-  width: 264px;
-  height: 380px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 264px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc((100% - 72px) / 4);
 }
 .team-hd {
   text-align: center;
   margin-bottom: 8px;
 }
-.p-s-f {
+
+.team-p {
   text-align: center;
 }
-
 /* секция 4 */
 .section-four {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 120px 0 120px;
 }
 .div-section-four {
   display: flex;
   flex-direction: column;
   max-width: 1128px;
-  gap: 24px;
 }
 .ul-section-four {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  column-gap: 24px;
   row-gap: 48px;
-  gap: 24px;
-  margin-bottom: 120px;
+}
+.ul-section-four:last-child {
+  margin-right: 0;
 }
 .four-s-list {
   display: flex;
@@ -284,9 +290,13 @@ footer {
 }
 .portfolio-div {
   padding: 32px 16px;
+  border-top: none;
   border: 1px solid #e7e9fc;
 }
-
+.p-s-f {
+  text-align: left;
+  margin-top: 8px;
+}
 /*футер*/
 .s-l-f {
   margin: 24px 0;
