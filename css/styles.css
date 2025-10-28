@@ -35,6 +35,11 @@ ul {
 img {
   display: block;
 }
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 /*хедер, лого*/
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -277,7 +282,6 @@ h2.hidden {
 .div-section-four {
   display: flex;
   flex-direction: column;
-  max-width: 1128px;
 }
 .ul-section-four {
   display: flex;
@@ -316,8 +320,6 @@ h2.hidden {
   letter-spacing: 0.02em;
 }
 .footer-div {
-  display: flex;
-  flex-direction: column;
   margin-left: 156px;
 }
 .p-footer {
